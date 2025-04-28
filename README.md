@@ -1,6 +1,11 @@
 🏥 **MediPath LabCare**:
+
 MediPath LabCare is a powerful, scalable, and professional-grade Medical Lab Management System built with a Spring Boot backend and a vision to streamline laboratory diagnostics and reporting operations.
 It reflects an elegant symphony of modern tech practices and time-honored development principles — an enterprise-grade solution for the future of healthcare services. 🚀
+
+
+
+******************************************************
 
 📜  **Project Description:**
 Automates lab test management, report generation, and patient records.
