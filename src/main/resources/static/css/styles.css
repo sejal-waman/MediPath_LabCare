@@ -1,0 +1,287 @@
+/* Base styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #eee;
+}
+
+/* Form container */
+.form-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .form-box {
+    background-color: #1e1e1e;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+body.dark-mode .form-box h2 {
+    color: #80cbc4;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #b2dfdb;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #333;
+}
+
+input:focus,
+select:focus {
+    border-color: #00796b;
+    background-color: #e0f2f1;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #2a2a2a;
+    color: #eee;
+    border-color: #4ca1af;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus {
+    background-color: #37474f;
+}
+
+/* Submit button */
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #00796b;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #004d40;
+}
+
+body.dark-mode button,
+body.dark-mode input[type="submit"] {
+    background: #4db6ac;
+    color: #000;
+}
+
+body.dark-mode button:hover,
+body.dark-mode input[type="submit"]:hover {
+    background: #26a69a;
+    color: #fff;
+}
+
+/* Link styling */
+a {
+    color: #00796b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode a {
+    color: #80cbc4;
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #00796b;
+    color: white;
+    transform: rotate(360deg);
+}
+
+body.dark-mode .theme-toggle-btn {
+    background-color: #37474f;
+    color: #fff;
+    border-color: #4ca1af;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .form-box {
+        padding: 30px 20px;
+    }
+}
+
+
+/* Access Denied Page Styling */
+.access-denied-box {
+    background-color: #fff3e0;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.access-denied-box h1 {
+    color: #e53935;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.access-denied-box p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.access-denied-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.access-denied-box a:hover {
+    background-color: #004d40;
+}
+
+/* Dark Mode Access Denied */
+body.dark-mode .access-denied-box {
+    background-color: #2a2a2a;
+    color: #eee;
+}
+
+body.dark-mode .access-denied-box h1 {
+    color: #ff8a80;
+}
+
+body.dark-mode .access-denied-box p {
+    color: #ccc;
+}
+
+body.dark-mode .access-denied-box a {
+    background-color: #4db6ac;
+    color: #000;
+}
+
+body.dark-mode .access-denied-box a:hover {
+    background-color: #26a69a;
+    color: #fff;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* General styling for labels on both login and register pages */
+label {
+    font-weight: bold; /* Makes the label text bold */
+    color: #4CAF50; /* Default label color, you can change it to any color you want */
+    font-size: 18px; /* Adjust the font size for better readability */
+    margin-bottom: 8px; /* Adds spacing below the label */
+    display: block; /* Makes sure the label is on its own line */
+    font-family: 'Arial', sans-serif; /* Choose a clean, readable font */
+    text-transform: uppercase; /* Converts the label text to uppercase (optional) */
+    letter-spacing: 1px; /* Adds a little space between letters (optional) */
+}
+
+/* Apply a different color for the register page labels */
+.register label {
+    color: #FF5733; /* Red color for register page labels */
+    font-size: 20px; /* Slightly larger font size for register page */
+    font-family: 'Verdana', sans-serif; /* Different font-family for register */
+}
+
+/* Apply a different color for the login page labels */
+.login label {
+    color: #3498DB; /* Blue color for login page labels */
+    font-size: 16px; /* Slightly smaller font size for login page */
+    font-family: 'Tahoma', sans-serif; /* Different font-family for login */
+}
+
+
+
+/* Additional styling for input fields to match the label style */
+input[type="text"], input[type="password"], input[type="email"] {
+    padding: 12px; /* Add padding for better spacing inside input fields */
+    margin-bottom: 15px; /* Add spacing between input fields */
+    border: 2px solid #ccc; /* Slightly thicker border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    width: 100%; /* Ensure input fields take up full width */
+    box-sizing: border-box; /* Ensures padding and borders are inside the element's width */
+    font-size: 16px; /* Font size for the input fields */
+}
+
+/* Focus state for input fields (optional: adds a border color change when focused) */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Removes the default outline */
+}
+
+
