@@ -23,6 +23,9 @@ Highly reusable codebase: Services, Controllers, Utility Classes built for modul
 Secure and Scalable system with structured error handling and extensible architecture.
 
 
+***********************************************************************************************
+
+
 🛠️ **Languages, Tools, and Technologies Used:**
 Category | Technology Stack
 Backend | Java 17, Spring Boot 3.x
@@ -36,6 +39,9 @@ API Testing | Postman
 Dependency Mgmt | Maven, Spring Boot Starters
 PDF Generation | iText PDF (Custom PdfGenerator utility)
 Deployment | Apache Tomcat (local)
+
+
+***********************************************************************************************
 
 
 🚀 **Features & Functionalities:**
@@ -67,6 +73,10 @@ User-friendly error messages and graceful fallbacks for missing resources.
 Foundation ready for full Spring Security authentication.
 
 
+
+***********************************************************************************************
+
+
 🧑‍💻 **Usage:**
 Clone the repository using Git.
 
@@ -77,6 +87,9 @@ Set up MySQL database and update application.properties.
 Build and run using Maven.
 
 Access the app locally via http://localhost:8080.
+
+
+***********************************************************************************************
 
 
 
