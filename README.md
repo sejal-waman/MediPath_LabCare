@@ -1,8 +1,8 @@
-🏥 ###MediPath LabCare:
+🏥 **MediPath LabCare**:
 MediPath LabCare is a powerful, scalable, and professional-grade Medical Lab Management System built with a Spring Boot backend and a vision to streamline laboratory diagnostics and reporting operations.
 It reflects an elegant symphony of modern tech practices and time-honored development principles — an enterprise-grade solution for the future of healthcare services. 🚀
 
-📜  ###Project Description:
+📜  **Project Description:**
 Automates lab test management, report generation, and patient records.
 
 Dynamically generates high-quality PDF reports upon lab result submission.
@@ -18,7 +18,7 @@ Highly reusable codebase: Services, Controllers, Utility Classes built for modul
 Secure and Scalable system with structured error handling and extensible architecture.
 
 
-🛠️ ###Languages, Tools, and Technologies Used:
+🛠️ **Languages, Tools, and Technologies Used:**
 Category | Technology Stack
 Backend | Java 17, Spring Boot 3.x
 Frontend | Thymeleaf (for admin panel views), HTML5, CSS3, JavaScript
@@ -33,7 +33,7 @@ PDF Generation | iText PDF (Custom PdfGenerator utility)
 Deployment | Apache Tomcat (local)
 
 
-🚀 ###Features & Functionalities:
+🚀 **Features & Functionalities:**
 🧪 Lab Test Management:
 Create, update, and manage lab tests linked to patients.
 
@@ -62,7 +62,7 @@ User-friendly error messages and graceful fallbacks for missing resources.
 Foundation ready for full Spring Security authentication.
 
 
-🧑‍💻 ###Usage:
+🧑‍💻 **Usage:**
 Clone the repository using Git.
 
 Import project into Spring Tool Suite (STS) or IntelliJ IDEA.
